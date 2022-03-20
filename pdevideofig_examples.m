@@ -25,12 +25,10 @@ u = result.NodalSolution;
 
 
 %% Default 
-fig = pdevideofig(model, u, tlist) ;
+% fig = pdevideofig(model, u, tlist) ;
 
 %% Pass additional function that enhances post-processing capabilities
 fig = pdevideofig(model, u, tlist, @additionalPostProcessing) ;
 
-
 %% Pass additional function that enhances post-processing capabilities
-addPostProcessingDummyFun = @(varargin) disp('') ;
-fig = pdevideofig(model, u, tlist, addPostProcessingDummyFun, 2, 11 ) ;
+% fig = pdevideofig(model, u, tlist, [], 2, 11 ) ;
