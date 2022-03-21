@@ -2,7 +2,7 @@ clear all
 close all
 clc
 
-%% Obtain the solution for the wave equation (inspired by Matlab's pdedemo6.m)
+%% Obtain the solution for the wave equation (based on Matlab's pdedemo6.m)
 
 c = 1; a = 0; f = 0; m = 1;
 
@@ -30,5 +30,5 @@ u = result.NodalSolution;
 %% Pass additional function that enhances post-processing capabilities
 fig = pdevideofig(model, u, tlist, @additionalPostProcessing) ;
 
-%% Pass additional function that enhances post-processing capabilities
+%% Start playing from frame no 2 and set play speed to 11 frames per second
 % fig = pdevideofig(model, u, tlist, [], 2, 11 ) ;
